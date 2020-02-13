@@ -6,6 +6,7 @@
 #include <string>
 #include <iostream>
 #include "Zombie.h"
+#include "mario.h"
 
 
 class Level{
@@ -32,6 +33,9 @@ private:
 
 	sf::Texture zombieTexture;
 	Zombie zombie;
+
+	sf::Texture marioTexture;
+	mario mario;
 	
 };
 //zara
