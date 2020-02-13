@@ -14,11 +14,24 @@ Zombie::Zombie()
 	walk.addFrame(sf::IntRect(385, 0, 55, 108));
 	walk.setFrameSpeed(1.f / 10.f);
 
-
+	
 
 }
 
 Zombie::~Zombie() {}
+
+
+
+void Zombie::handleInput(float dt)
+{
+	//move up
+	if (input->isKeyDown(sf::Keyboard::Up))
+	{
+		move(0, 25 * dt);
+	}
+
+	
+}
 
 void Zombie::update(float dt)
 {

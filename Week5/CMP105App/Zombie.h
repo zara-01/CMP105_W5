@@ -10,13 +10,15 @@ public:
 	Zombie();
 	~Zombie();
 
+	void handleInput(float dt);
+	//void update(float dt);
+
 	void update(float dt) override;
 
 protected:
 
 	Animation walk;
 
-	Animation* currentAnimation;
 
 };
 
