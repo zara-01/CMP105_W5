@@ -5,6 +5,7 @@
 #include "Framework/GameObject.h"
 #include <string>
 #include <iostream>
+#include "Zombie.h"
 
 
 class Level{
@@ -18,10 +19,18 @@ public:
 
 private:
 	// Default functions for rendering to the screen.
+
 	void beginDraw();
 	void endDraw();
 
 	// Default variables for level class.
+
 	sf::RenderWindow* window;
 	Input* input;
+
+	//level objects
+
+	sf::Texture zombieTexture;
+	Zombie zombie;
+	
 };
