@@ -40,3 +40,4 @@ void Zombie::update(float dt)
 	setTextureRect(walk.getCurrentFrame());
 
 }
+//zara
